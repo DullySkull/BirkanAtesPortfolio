@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-sans transition-colors duration-300;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-parchment dark:bg-midnight-blue;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-muted-gold dark:bg-moonlight-blue rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-forest-green dark:bg-desaturated-purple;
+}
